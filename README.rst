@@ -2,7 +2,7 @@ Instalación en entorno docker
 =============================
 
 Correr los siguientes comandos, asumiendo se dispone del directorio con este
-repo en /tmp/senasa_theme:
+repo en /tmp/senasa_theme: ::
 
     source $CKAN_VENV/bin/activate && cd $CKAN_VENV/src/
     cp -r /tmp/senasa_theme .
