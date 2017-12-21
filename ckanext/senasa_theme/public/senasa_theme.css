@@ -1,3 +1,7 @@
+body  {
+  background: #eee url(../../../base/images/bg.png);
+}
+
 /* =====================================================
    The "account masthead" bar across the top of the site
    ===================================================== */
@@ -76,7 +80,7 @@
 }
 
 .hero  {
-  background: #03ADC4;
+  background: #eee url(../../../base/images/bg.png);
 }
 
 .media-overlay .media-heading {
@@ -112,7 +116,7 @@
 
 .site-footer,
 body {
-  background-color: #03ADC4;
+  background: #03ADC4;
 }
 /* The text in the footer. */
 .site-footer,
@@ -123,4 +127,8 @@ body {
 /* The link texts in the footer. */
 .site-footer a {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.site-footer select {
+  color: #777;
 }
