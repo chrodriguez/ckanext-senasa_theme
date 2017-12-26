@@ -2,9 +2,9 @@
 
 {% block header_account %}
 
-{% if not h.senasa_theme_disable_user_access %}
+{% if not h.senasa_theme_disable_user_access() %}
 
-{{ super }}
+{{ super() }}
 
 {% endif %}
 
