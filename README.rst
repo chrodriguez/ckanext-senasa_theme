@@ -28,3 +28,12 @@ Luego agregar el plugin en la configuracion de ckan ``/etc/ckan/{ckan,production
     ckan.plugins = stats text_view image_view recline_view senasa_theme
 
 Luego reiniciar la imagen del contenedor: `docker-compose restart ckan`
+
+Opciones de configuración del plugin
+------------------------------------
+
+El plugin ofrece configurar si los usuarios pueden loguearse o registrarse en el portal. Por defecto se permite esta funcionalidad. Para deshabilitar el registro y acceso de usuarios configurar lo siguiente en  ``/etc/ckan/{ckan,production}.ini`` ::
+
+    ckan.senasa_theme.disable_user_access = True
+
+Luego de agregar esta opción no se podrá acceder al portal con usuarios o registrarse
