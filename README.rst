@@ -1,6 +1,15 @@
 Instalación en entorno docker
 =============================
 
+Instalación desde github
+------------------------
+
+Asumiendo la imagen oficial de ckan: ``ckan/ckan`` correr: ::
+
+    ckan-pip install git+https://github.com/chrodriguez/ckanext-senasa_theme.git
+
+Probar la instalacion desde una carpeta
+---------------------------------------
 Correr los siguientes comandos, asumiendo se dispone del directorio con este
 repo en /tmp/senasa_theme: ::
 
@@ -9,6 +18,10 @@ repo en /tmp/senasa_theme: ::
     cd senasa_theme
     pip install -r requirements.txt
     python setup.py install && python setup.py develop
+
+
+Configuración de CKAN para usar el tema
+----------------------------------------
 
 Luego agregar el plugin en la configuracion de ckan ``/etc/ckan/{ckan,production}.ini`` ::
 
