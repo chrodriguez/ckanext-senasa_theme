@@ -20,6 +20,7 @@ class Senasa_ThemePlugin(plugins.SingletonPlugin):
         toolkit.add_template_directory(config_, 'templates')
         toolkit.add_public_directory(config_, 'public')
         toolkit.add_resource('fanstatic', 'senasa_theme')
+        config['ckan.favicon'] = '/senasa-favicon.ico'
 
     # IRoutes
     def before_map(self, routing_map):
